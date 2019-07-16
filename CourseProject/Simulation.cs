@@ -54,6 +54,7 @@ namespace CourseProject
                             {
                                 buyer1.AddToBag();      
                                 Console.WriteLine(buyer1.ToString(payment));
+                                break;
                             }
                             else
                             {

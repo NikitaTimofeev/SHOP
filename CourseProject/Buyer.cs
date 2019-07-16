@@ -6,19 +6,20 @@ namespace CourseProject
 {
     class Buyer
     {
-        private string NameBuyer { get; set; }
-        
-        /*делаю поле статик чтобы мог вызвать его в статик методе. Ошибка была на этапе проектирования, нужно было в большинство методов передавать покупателя
-        По сути это поле может быть статик так как наш покупатель является единственным во всем магазине
-             */
+        /*
+        Делаю поле статик чтобы мог вызвать его в статик методе. Ошибка была на этапе проектирования, нужно было в большинство методов передавать покупателя
+        По сути все поля у покупателя могут быть статик так как он единственный в нашем магазине
+        */
         private static List<FoodStuff> Bag { get; set; }
         private static List<FoodStuff> Basket { get; set; }
+
+        private string NameBuyer { get; set; }
         private double Money { get; set; }
   
 
         public Buyer()
         {
-            NameBuyer = NameGenerator.genNameForBuyer();
+            NameBuyer = NameGenerator.NameForBuyer();
             Bag = new List<FoodStuff>(NameGenerator.RandomInt(1,50));
             Money = NameGenerator.RandomInt(100,1000);
             Basket = new List<FoodStuff>();

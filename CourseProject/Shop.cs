@@ -12,7 +12,7 @@ namespace CourseProject
 
         public Shop()
         {
-            Name = NameGenerator.genNameForShop();
+            Name = NameGenerator.NameForShop();
             Window = new Window();
             Storage = new Storage();
         }
@@ -25,7 +25,7 @@ namespace CourseProject
 
         public double CalculateSumm(int id, int count)
         {
-            return Window.calculateSumm(id, count);
+            return Window.СalculateSumm(id, count);
         }
 
         

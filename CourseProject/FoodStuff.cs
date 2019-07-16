@@ -14,7 +14,7 @@ namespace CourseProject
 
         public FoodStuff()
         {
-            NameProduct = NameGenerator.genProduct();
+            NameProduct = NameGenerator.Product();
             Callories = NameGenerator.RandomInt(1,100);
             Price = NameGenerator.RandomInt(1,100);
         }

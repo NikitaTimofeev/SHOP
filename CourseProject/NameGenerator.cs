@@ -6,7 +6,7 @@ namespace CourseProject
 {
     class NameGenerator
     {
-        public static string genNameForBuyer()
+        public static string NameForBuyer()
         {
             string[] Names = new string[14] { "aaron", "abdul", "abe", "abel", "abraham", "adam", "adan", "adolfo", "adolph", "adrian", "abby", "abigail", "adele", "adrian" };
             string[] lastNames = new string[5] { "abbott", "acosta", "adams", "adkins", "aguilar" };
@@ -17,7 +17,7 @@ namespace CourseProject
             
             return currentName;
         }
-        public static string genNameForShop()
+        public static string NameForShop()
         {
             string currentShop;
             string[] Names = new string[5] { "ATB", "Metro", "ASHAN", "Silpo", "shop" };
@@ -28,7 +28,7 @@ namespace CourseProject
             return currentShop;
 
         }
-        public static string genProduct()
+        public static string Product()
         {
             string currentProduct;
             string[] Products = new string[25] { "tomato", "beetroot","brussel sprouts","peas","zucchini",

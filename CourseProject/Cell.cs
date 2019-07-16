@@ -10,13 +10,14 @@ namespace CourseProject
 
         private FoodStuff ProductInCell { get; set; }
         private int CountFoodInCell { get; set; }
+
         public Cell()
         {
             ProductInCell = new FoodStuff();
             CountFoodInCell = NameGenerator.RandomInt(1,10);
         }
 
-        //конструктор для возвращения продукта если не хватает денег
+        
         public Cell(FoodStuff food, int count)
         {
             ProductInCell = food;
@@ -33,8 +34,8 @@ namespace CourseProject
                 throw new ShopException($"Cell have {CountFoodInCell} products, not more");
             }
 
-            CountFoodInCell -= count;
 
+            CountFoodInCell -= count;
 
 
             if (CountFoodInCell == 0)

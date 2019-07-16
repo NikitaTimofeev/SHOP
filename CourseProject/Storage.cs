@@ -22,6 +22,7 @@ namespace CourseProject
             {
                cell.Enqueue(new Cell());
             }
+
             return cell;
         }
         
